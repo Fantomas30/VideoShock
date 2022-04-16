@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta charset="utf-8">
+	<title>YouTube™ unlocked - Watch this video - Change your life</title>
+	<meta name="description" content="Watch this video which will never be allowed on YouTube™">
+	<link href="./css/style.css" rel="stylesheet">
+	<link rel="canonical" href="https://youtubeunlocker.com">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet" />
+	
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+
+
+
+<div class="container">
+
+<div id="step1">
+
+
+
+
+
+<div class="videobox">
+<img class="element" style="box-shadow: -1px 0px 6px 2px red; width:150px;" src="./img/yt1.png"></img><br>
+</div>
+
+
+<div class="headline">
+
+
+
+<strong><br>
+YouTube™ </strong> will NEVER show you this video 😨 <br><br>
+
+<span class="line2"><b>If enough humans <font color="red">SEE THIS</font> we can still <font color="red">CHANGE</font> the <font color="red">OUTCOME <span style="font-size:40px;">!!!</span></font></b></span>
+<br><br>
+<button class="but"> <i style="margin-right:10px;" class="fas fa-video"></i>   Watch video </button>
+<br><br>
+<span class="countbox"><i class="fas fa-eye"></i> Viewcount: <span id="counter"></span> </span>
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+<div id="step2" style="display:none;">
+<b> 
+<div style="border-color:white;" class="countbox">
+<font color="red"> <i style="font-size:22px;" class="fas fa-exclamation-circle"></i> Due to the heavy traffic and massive attacks - attempts to shutdown this video - Verify being a legit user by installing and running one app through <span style="color:white;">AppCatcha™</span></b></font>
+
+<br><br>
+
+
+<!-- OG CAPTCHA LOCKER (can be replaced with other lockers like Ludyfeed Adludum) -->
+<center>
+<div style="" data-captcha-enable="true"></div>
+</center>
+
+</div>
+
+<br>
+</div>
+
+
+
+
+
+
+
+<b> <i style="color:red;" class="fab fa-youtube"></i> Live comments:</b>
+<br><br>
+<div style="padding:10px;" id="ytc"></div>
+
+</div>
+
+
+
+
+
+
+
+<script type="text/javascript" src="./js/jquery.min.js"></script>	
+<script type="text/javascript" src="./js/ytc.js"></script>	
+<script type="text/javascript" src="./js/ytc-settings.js"></script>	
+
+
+
+<script>
+
+
+
+
+$(document).ready(function() {
+var cs;
+
+
+if (localStorage.getItem("count") === null) {
+cs = 958374;
+} else {
+cs = parseInt(localStorage.getItem("count"));
+document.getElementById("counter").innerHTML = localStorage.getItem("count");
+}
+
+
+
+
+setInterval(function(){ 
+
+localStorage.setItem("count", cs);
+cs = parseInt(localStorage.getItem("count")) + Math.floor(Math.random() * Math.floor(500));
+localStorage.setItem("count", cs);
+
+
+document.getElementById("counter").innerHTML = localStorage.getItem("count");
+ 
+}, 3000 );
+
+
+});
+
+$('.but').on('click', function() {
+
+$('#step1').slideToggle();
+$('#step2').slideToggle();
+			
+});
+
+</script>
+
+<!-- CPI/CPA LOCKER SCRIPTLINE -->
+
+
+
+
+
+</body>
+</html>
