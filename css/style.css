@@ -1,0 +1,176 @@
+/* MAIN */
+
+body {
+font-family:Roboto,sans-serif;	
+margin:0px;
+	
+}
+
+.header {
+width:100%;
+text-align:left;
+}
+
+.logoimg {
+margin-left:10px;
+margin-top:10px;
+height:32px;
+}
+
+.logotxt {
+position:absolute;
+margin-top:16px;
+margin-left:15px;
+
+}
+
+.container {
+text-align:center;	
+padding:ßpx;
+}	
+
+.headline {
+font-size: 25.5px;
+margin-top:-20px;
+padding:10px;
+padding-bottom:30px;
+	
+}
+
+.inp {
+position:relative;
+z-index:1;
+width:300px;
+height:44px;
+padding: 0 15px;
+font-family: -apple-system,BlinkMacSystemFont,"Helvetica","Arial",sans-serif;
+font-size: 0.875em;
+background-color:#fff;
+border:1px solid #e5e5ea;
+border-radius:6px;
+outline:0;	
+	
+}
+
+.but {
+background-color:#ff001ded;
+position:relative;
+display:inline-flex;
+padding: 12px 32px;
+text-decoration:none;
+border:0;
+border-radius:5px;
+outline:0;
+min-width:215px;
+text-align:center;
+color:#fff;
+font-size:19px;
+font-weight:600;
+justify-content:center;
+
+
+	
+}
+
+.countbox {
+background-color:#ff7f7f69;	
+padding:8px;
+border:1px dashed;
+font-size:15px;
+	
+}
+
+.videobox {
+background: url("../img/box.png");
+background-position:4px;
+height:100%;
+justify-content:center;
+	
+}
+
+.line2 {
+font-size:22px;
+line-height:32px;
+margin-top:20px;
+}
+
+/* ANIMATIONS */
+
+.element {
+  margin: 50px auto;
+  background-color: red;
+  animation-name: stretch;
+  animation-duration: 1.5s; 
+  animation-timing-function: ease-out; 
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+
+@keyframes stretch {
+  0% {
+    transform: scale(.8);
+    background-color: red;
+    border-radius: 20%;
+  }
+  50% {
+    background-color: orange;
+  }
+  100% {
+    transform: scale(1.0);
+    background-color: yellow;
+  }
+}
+
+
+/* DESKTOP */
+
+@media only screen and (min-width: 600px) {
+
+
+body {
+background: url("../img/bg.jpg");	
+ background-repeat: no-repeat;
+   background-attachment: fixed;
+  background-position: center;
+}
+
+.container {
+margin:auto;	
+margin-top:10px;
+max-width:750px;
+/* box-shadow: 0 1px 4px 0 rgba(12, 12, 13, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.15); */
+padding:50px;
+border: 3px dashed red;
+background-color:#fff;
+	
+}
+
+.headline {
+font-size: 32.5px;
+line-height:40px;	
+}
+
+
+.videobox {
+background: url("../img/boxd.png");
+width:100%;
+height:480px;
+background-position:0px -100px;
+justify-content:center;
+	
+}
+
+.element {
+margin-top:24%;	
+}
+
+.line2 {
+	font-size:20px;
+}
+
+
+}
+
